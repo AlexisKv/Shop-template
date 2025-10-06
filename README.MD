@@ -29,6 +29,8 @@ A simple e-commerce backend built with ASP.NET Core 8 and MySQL, supporting user
 
 <u>Some endpoints are not fully implemented</u> (e.g., `Logout`, `UpdateUser`, `ChangePassword`).
 
+<u>Post-Login Notification feature is not implemented</u>.
+
 # **Specification**
 
 ### Global Exception Handling
