@@ -8,7 +8,7 @@ using ShopTemplate.Services;
 namespace ShopTemplate.Controllers;
 
 [ApiController]
-[Route("api/user/[controller]")]
+[Route("api/[controller]")]
 public class UserController : ControllerBase
 {
     private readonly UserService _userService;
