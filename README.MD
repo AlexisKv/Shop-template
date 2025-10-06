@@ -75,7 +75,7 @@ All unhandled exceptions are caught by `ExceptionHandlingMiddleware`:
 
 Here is a preview of requests in swagger:
 
-![Swagger Preview](./SwaggerPreview.JPG)
+![Swagger Preview](./Swagger-Preview.JPG)
 ### Setup Database
 
 1. Install MySQL (if not installed) and start the service.
