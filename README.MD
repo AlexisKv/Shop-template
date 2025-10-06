@@ -1,6 +1,6 @@
 ﻿# ShopTemplate API
 
-A simple e-commerce backend built with ASP.NET Core 8 and MySQL, supporting users, products, and shopping cart functionality. Real-time cart updates are powered by SignalR.
+A simple e-commerce backend built with ASP.NET Core 8 and MySQL, supporting users, products, and shopping cart functionality. Real-time cart updates are powered by SignalR. All endpoints are secured with JWT authentication.
 
 ## Table of Contents
 
@@ -50,12 +50,22 @@ All unhandled exceptions are caught by `ExceptionHandlingMiddleware`:
 
 - `POST /api/auth/register` – create a new user. (Basic user info is in the JWT token.)
 - `POST /api/auth/login` – login user. (Basic user info is in the JWT token.)
-- `POST /api/products/add-product` – add a new product
-- `GET /api/products/get-all-products` – get paged list of products
-- `POST /api/cart/add-item-to-cart` – add item to cart
-- `DELETE /api/cart/remove-item-from-cart` – remove item from cart
-- `POST /api/cart/update-quantity` – update item quantity
-- `GET /api/cart/{userId}` – get cart by user
+- `DELETE /api/auth/logout` – not implemented
+
+
+- `GET /api/user` – get current user info
+- `PUT /api/user/update-profile` – not implemented
+- `PUT /api/user/password` – not implemented
+
+
+- `POST /api/product` – add a new product
+- `GET /api/product` – get paged list of products
+
+
+- `POST /api/users/cart` – add item to cart
+- `DELETE /api/users/cart` – remove item from cart
+- `PUT /api/users/cart` – update item quantity
+- `GET /api/users/cart` – get cart by user
 
 ### SignalR
 
